@@ -3,13 +3,13 @@
 dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 error=N
 
-sudo cp "$dir/ipaHelper" /usr/bin/
+sudo cp "$dir/ipaHelper" /usr/local/bin/
 if [ $? != 0 ]; then
     error=Y
     echo "Error copying script"
 fi
 
-sudo cp "$dir/ipaHelper.1" /usr/share/man/man1/
+sudo cp "$dir/ipaHelper.1" /usr/local/share/man/man1/
 if [ $? != 0 ]; then
     error=Y
     echo "Error copying man page"
